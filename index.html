@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>banner_hy | Pixel-art TikTok banners</title>
+<meta name="description" content="Pixel-art banners for your TikTok profile. 16:9, 1920x1080, ready to upload.">
+<link rel="icon" href="img/logo.png">
+<style>
+  :root {
+    --bg: #0e0524; --card: #190a38; --line: #2e1660; --text: #f4ecff; --muted: #b9a6e0; --gold: #ffd36b; --pink: #ee6a78;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.55; }
+  img { image-rendering: pixelated; max-width: 100%; display: block; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 28px 0 8px; display: flex; align-items: center; gap: 14px; }
+  header img { width: 52px; height: 52px; border-radius: 50%; }
+  header b { font-size: 20px; letter-spacing: .5px; }
+  .hero { padding: 36px 0 28px; }
+  h1 { font-size: clamp(30px, 6vw, 52px); line-height: 1.1; margin: 0 0 14px; }
+  h1 span { color: var(--gold); }
+  .lead { color: var(--muted); font-size: 18px; max-width: 620px; margin: 0 0 22px; }
+  .btn { display: inline-block; background: var(--gold); color: #2a0f4f; font-weight: 700; padding: 14px 22px; border-radius: 10px; text-decoration: none; }
+  .btn.off { background: var(--line); color: var(--muted); cursor: not-allowed; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; padding: 12px 0 8px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .card .cap { padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 14px; }
+  .card .cap b { color: var(--text); }
+  h2 { font-size: 26px; margin: 40px 0 10px; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 52px; position: relative; }
+  .steps li::before { content: counter(s); position: absolute; left: 14px; top: 12px; width: 26px; height: 26px; border-radius: 6px; background: var(--gold); color: #2a0f4f; font-weight: 800; text-align: center; line-height: 26px; }
+  .note { color: var(--muted); font-size: 14px; }
+  footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 22px 0 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="img/logo.png" alt="banner_hy logo"><b>banner_hy</b></header>
+
+  <section class="hero">
+    <h1>Pixel-art banners<br>for your <span>TikTok profile</span></h1>
+    <p class="lead">Retro, 16:9, 1920×1080. Pick a look, upload it as your banner, and your profile stands out.</p>
+    <!-- When the Gumroad product exists, replace this button's href and remove the "off" class. -->
+    <a class="btn off" href="#" aria-disabled="true">Coming soon</a>
+  </section>
+
+  <section>
+    <div class="grid">
+      <div class="card"><img src="img/neon-city.png" alt="Neon City pixel-art banner"><div class="cap"><b>Neon City</b><span>1920×1080</span></div></div>
+      <div class="card"><img src="img/night-forest.png" alt="Night Forest pixel-art banner"><div class="cap"><b>Night Forest</b><span>1920×1080</span></div></div>
+      <div class="card"><img src="img/ocean-dusk.png" alt="Ocean Dusk pixel-art banner"><div class="cap"><b>Ocean Dusk</b><span>1920×1080</span></div></div>
+    </div>
+    <p class="note">These are three of the first looks. More themes are on the way.</p>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Pick a banner and download the PNG after you buy it.</li>
+      <li>On your phone, open TikTok → Profile → Edit profile and add it as your banner.</li>
+      <li>Keep your name or photo in the middle, since banners can be cropped at the edges.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <div>© banner_hy. Not affiliated with or endorsed by TikTok.</div>
+  </footer>
+</div>
+</body>
+</html>
